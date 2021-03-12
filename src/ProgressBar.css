@@ -1,0 +1,39 @@
+
+.ProgressBar  {
+  width: 80%;
+  background: ghostwhite;
+  border-radius: 20px;
+  height: 20px;
+  overflow: hidden;
+  margin: 50px;
+  box-shadow: 0 0 10px rgba(100, 149, 237, 0.3);
+  position: relative;
+}
+.ProgressBar .progress {
+  background: #709fb0;
+  color: white;
+  height: 20px;
+  border-radius: 20px;
+  text-align: right;
+  min-width: 5%;
+}
+
+.ProgressBar .progress span {
+  padding-right: 10px;
+  font-family: sans-serif;
+  font-size: 11px;
+  line-height: 20px;
+}
+
+
+.ProgressBar.error .progress{
+  background: red;
+  color: red;
+}
+
+.ProgressBar.error:before {
+  content: "⚠️";
+  font-size: 11px;
+  position: absolute;
+  left:  50%;
+}
